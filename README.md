@@ -27,16 +27,7 @@
 > Qwen3: 100 samples/subset, GPT-OSS: 全量 (ARC-Easy 2376, ARC-Challenge 1172)
 > 全部使用 evalscope 评测, vLLM 推理
 
-### GPT-OSS 20B 输出对比 (BF16 vs HiF8)
 
-| Prompt | BF16 | HiF8 | 匹配 |
-|--------|------|------|------|
-| "The Pythagorean theorem states that" | 一致 | 一致 | YES |
-| "Water boils at a temperature of" | 一致 | 一致 | YES |
-| "The capital of France is" | 核心内容一致 | 末尾细微差异 | 近似 |
-| "In machine learning, gradient descent is" | 核心内容一致 | 措辞略有不同 | 近似 |
-
-> 事实性内容完全一致，仅自由续写部分存在预期内的量化微差。
 
 ## 目录结构
 
